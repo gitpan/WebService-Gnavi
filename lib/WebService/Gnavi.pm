@@ -1,4 +1,4 @@
-# $Id: /mirror/perl/WebService-Gnavi/trunk/lib/WebService/Gnavi.pm 7149 2007-05-10T03:32:54.935894Z daisuke  $
+# $Id: /mirror/perl/WebService-Gnavi/trunk/lib/WebService/Gnavi.pm 7153 2007-05-10T03:45:55.482571Z daisuke  $
 #
 # Copyright (c) 2007 Daisuke Maki <daisuke@endeworks.jp>
 
@@ -9,7 +9,7 @@ use LWP::UserAgent;
 use URI;
 use XML::LibXML;
 use WebService::Gnavi::SearchResult;
-our $VERSION = '0.01';
+our $VERSION = '0.011';
 our $BASE_URI = URI->new('http://api.gnavi.co.jp/');
 
 sub new
@@ -269,4 +269,12 @@ This is planned to be fixed soon-ish (or, send in a patch, please ;)
 =head1 AUTHOR
 
 Copyright (c) 2007 Daisuke Maki E<lt>daisuke@endeworks.jpE<gt>
+
+=head1 LICENSE
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
+See http://www.perl.com/perl/misc/Artistic.html
+
 =cut
