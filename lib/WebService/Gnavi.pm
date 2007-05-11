@@ -1,4 +1,4 @@
-# $Id: /mirror/perl/WebService-Gnavi/trunk/lib/WebService/Gnavi.pm 7153 2007-05-10T03:45:55.482571Z daisuke  $
+# $Id: /mirror/perl/WebService-Gnavi/trunk/lib/WebService/Gnavi.pm 7171 2007-05-11T09:10:30.913520Z daisuke  $
 #
 # Copyright (c) 2007 Daisuke Maki <daisuke@endeworks.jp>
 
@@ -9,7 +9,7 @@ use LWP::UserAgent;
 use URI;
 use XML::LibXML;
 use WebService::Gnavi::SearchResult;
-our $VERSION = '0.011';
+our $VERSION = '0.02';
 our $BASE_URI = URI->new('http://api.gnavi.co.jp/');
 
 sub new

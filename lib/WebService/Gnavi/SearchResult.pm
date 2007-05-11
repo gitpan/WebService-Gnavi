@@ -1,4 +1,4 @@
-# $Id: /mirror/perl/WebService-Gnavi/trunk/lib/WebService/Gnavi/SearchResult.pm 7149 2007-05-10T03:32:54.935894Z daisuke  $
+# $Id: /mirror/perl/WebService-Gnavi/trunk/lib/WebService/Gnavi/SearchResult.pm 7171 2007-05-11T09:10:30.913520Z daisuke  $
 #
 # Copyright (c) 2007 Daisuke Maki <daisuke@endeworks.jp>
 
@@ -13,9 +13,9 @@ sub parse
     my $xml = shift;
 
     my $pager = Data::Page->new(
-        $xml->findnodes('/response/total_hit_count'),
-        $xml->findnodes('/response/hit_per_page'),
-        $xml->findnodes('/response/page_offset')
+        $xml->findvalue('/response/total_hit_count'),
+        $xml->findvalue('/response/hit_per_page'),
+        $xml->findvalue('/response/page_offset')
     );
 
     my @list;
